@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rain,
+.clouds,
+.snow,
+.sun {
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  color: white;
+}
+
+.rain {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0.502)),
+    url(../images/rain.gif);
+}
+
+.clouds {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.352), rgba(0, 0, 0, 0.352)),
+    url(../images/clouds.gif);
+}
+
+.sun {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.352), rgba(0, 0, 0, 0.352)),
+    url(../images/sun.gif);
+}
+
+.weather-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.city {
+  display: block;
+  font-size: 40px;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.description {
+  display: block;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.current-temp {
+  font-size: 90px;
+  font-weight: 100;
+}
+
+i {
+  font-size: 85px;
+  margin-right: 15px;
+}
+
+.ion-md-sunny {
+  color: yellow;
+}

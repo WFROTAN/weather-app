@@ -1,0 +1,22 @@
+.search-container {
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search-bar input {
+  margin-top: 20px;
+  width: 250px;
+  height: 30px;
+  border-radius: 15px;
+  padding:6px 15px 6px 18px;
+  border: 1px black;
+  background: linear-gradient(rgba(255, 255, 255, 0.458), rgba(255, 255, 255, 0.538));
+  font-size: 15px;
+  color: grey;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
