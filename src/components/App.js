@@ -29,7 +29,7 @@ class App extends React.Component {
 
         (async () => {
           const response = await axios.get(
-            `http://api.openweathermap.org/data/2.5/weather?lat=${
+            `https://api.openweathermap.org/data/2.5/weather?lat=${
               this.state.lat
             }&lon=${
               this.state.long
@@ -87,7 +87,7 @@ class App extends React.Component {
   onSearchSubmit = async city => {
     try {
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=bc6f01ce4a4123c452f9698f179544f6`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=bc6f01ce4a4123c452f9698f179544f6`
       );
       this.setWeather(
         `${Math.round(response.data.main.temp)}\xB0`,
